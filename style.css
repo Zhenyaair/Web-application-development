@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.full-header {
+  width: 100%;
+  background: linear-gradient(to right, #3a0ca3, #7209b7);
+  color: white;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  padding: 1rem 0 0.5rem;
+}
+
+nav {
+  background-color: #480ca8;
+}
+
+nav .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0.75rem 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffd60a;
+}
+
+main {
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 24px;
+  color: #3a0ca3;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 18px;
+  margin-top: 1rem;
+  color: #560bad;
+}
+
+h4 {
+  font-size: 16px;
+  margin: 0.5rem 0 0.25rem;
+}
+
+p, li {
+  font-size: 14px;
+  margin-bottom: 0.75rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+/* Команда */
+.team-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.team-member {
+  flex: 1 1 calc(33.33% - 1rem);
+  text-align: center;
+  background-color: #f3f0ff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.photo-box {
+  background-color: #e0e0e0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.photo-box img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.full-footer {
+  background-color: #3a0ca3;
+  padding: 1rem 0;
+  text-align: center;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.footer {
+  font-size: 16px;
+}
+
+/* Медіа-запити для мобільних */
+@media (max-width: 600px) {
+  nav .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-row {
+    flex-direction: column;
+  }
+
+  .team-member {
+    flex: 1 1 100%;
+  }
+}
