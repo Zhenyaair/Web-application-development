@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(images/cosmos.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scene {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+
+#earth {
+  position: relative;
+  top: 138px;
+  left: 140px;
+  z-index: 1;
+  width: 200px;
+}
+
+#moon {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+  width: 60px;
+  z-index: 0;
+  animation: orbita 6s linear infinite;
+}
+
+@keyframes orbita {
+  0% {
+    top: 260px; left: 100px; width: 50px; z-index: 0; transform: rotate(0deg);
+  }
+  10% {
+    top: 200px; left: 180px; width: 55px; z-index: 0;
+  }
+  25% {
+    top: 100px; left: 250px; width: 60px; z-index: 0;
+  }
+  40% {
+    top: 120px; left: 315px; width: 65px; z-index: 1;
+  }
+  50% {
+    top: 150px; left: 330px; width: 70px; z-index: 2;
+  }
+  60% {
+    top: 180px; left: 300px; width: 68px; z-index: 2;
+  }
+  75% {
+    top: 230px; left: 100px; width: 60px; z-index: 2;
+  }
+  90% {
+    top: 240px; left: 90px; width: 55px; z-index: 1;
+  }
+  100% {
+    top: 260px; left: 100px; width: 50px; z-index: 0; transform: rotate(360deg);
+  }
+  
+}
+
+
