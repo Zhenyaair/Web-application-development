@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GamePulse Analytics</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <!-- AOS animation CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="bg-gradient text-white py-4" style="background: linear-gradient(to right, #3a0ca3, #7209b7);">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">GamePulse</a>
+
+    <!-- Кнопка-гамбургер -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Посилання -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#about">Про нас</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#team">Команда</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Продукти</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Контакти</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  </header>
+
+  <!-- Main content -->
+  <main class="container my-5">
+    
+    <!-- About Section -->
+    <section id="about">
+      <h2 class="text-primary mb-4" data-aos="fade-up">Про нас</h2>
+      
+      <article data-aos="fade-right">
+        <h3 class="text-secondary">Історія</h3>
+        <p>
+          GamePulse Analytics засновано у 2022 році командою ентузіастів гейм-індустрії та дата-сайєнсу. Ми створили платформу, яка аналізує мільйони ігрових сесій, переглядів стрімів, відгуків і соціальної активності, щоб передбачити, які ігри стануть хітами.
+        </p>
+      </article>
+      
+      <article data-aos="fade-left">
+        <h3 class="text-secondary">Місія</h3>
+        <p>
+          Допомагати гейм-студіям, інвесторам і маркетологам приймати зважені рішення на основі даних про реальні тренди у світі відеоігор.
+        </p>
+      </article>
+    </section>
+
+    <!-- Video -->
+    <div class="my-5" data-aos="zoom-in">
+      <div class="ratio ratio-16x9">
+      <iframe 
+    src="https://www.youtube.com/embed/QyhwSYhX09s?si=v6llUc3vSMCMQhYl"
+    title="YouTube video player"
+    style="border: 0;" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" 
+    allowfullscreen>
+  </iframe>
+      </div>
+    </div>
+
+    <!-- Team Section -->
+    <section id="team">
+      <h3 class="text-primary mb-4" data-aos="fade-up">Цінності</h3>
+      <div class="row">
+        <div class="col-md-4 mb-4" data-aos="flip-left">
+          <div class="card text-center shadow-sm h-100">
+            <div class="card-body">
+              <img src="User_icon.png" alt="Анна Ковальчук" class="rounded-circle mb-3" width="60" height="60">
+              <h5 class="card-title">Анна Ковальчук</h5>
+              <p class="card-text">CEO, стратегія та партнерства</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="flip-up">
+          <div class="card text-center shadow-sm h-100">
+            <div class="card-body">
+              <img src="User_icon.png" alt="Олексій Лисенко" class="rounded-circle mb-3" width="60" height="60">
+              <h5 class="card-title">Олексій Лисенко</h5>
+              <p class="card-text">CTO, архітектор аналітичної платформи</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="flip-right">
+          <div class="card text-center shadow-sm h-100">
+            <div class="card-body">
+              <img src="User_icon.png" alt="Катерина Бондар" class="rounded-circle mb-3" width="60" height="60">
+              <h5 class="card-title">Катерина Бондар</h5>
+              <p class="card-text">Data Scientist, обробка ігрових трендів</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="mt-5" data-aos="fade-up">
+      <h3 class="text-primary mb-3">Наш продукт: GamePulse</h3>
+      <p>Платформа GamePulse забезпечує:</p>
+      <ul>
+        <li>Моніторинг популярності ігор у режимі реального часу</li>
+        <li>Аналітику з Twitch, YouTube, Steam</li>
+        <li>Інтерактивні дашборди та прогнози</li>
+        <li>API для інтеграції в ігрові сервіси</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="mt-5" data-aos="fade-up">
+      <h3 class="text-primary mb-3">Контакти</h3>
+      <p>Email: contact@gamepulse.io</p>
+      <p>Телефон: +380 44 123 4567</p>
+      <p>Адреса: вул. Січових Стрільців, 15, Київ, Україна</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-3 mt-5">
+    <p class="mb-0">© 2025 GamePulse Analytics</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS animation JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
